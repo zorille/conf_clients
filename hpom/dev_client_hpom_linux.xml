@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xml>
+	<hpom using="oui">
+		<client>
+			<cmd>opcmsg</cmd>
+			<dossier>/opt/OV/bin</dossier>
+		</client>
+	</hpom>
+</xml>

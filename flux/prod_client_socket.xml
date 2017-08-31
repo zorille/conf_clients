@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xml>
+	<socket_calculateur using="oui">
+		<serveur>/tmp/zcalculateur.sock</serveur>
+		<port></port>
+		<type>unix</type>
+		<sort_en_erreur>non</sort_en_erreur>
+	</socket_calculateur>
+	<socket_database using="oui">
+		<serveur>/tmp/zdatabase.sock</serveur>
+		<port></port>
+		<type>unix</type>
+		<sort_en_erreur>non</sort_en_erreur>
+	</socket_database>
+</xml>

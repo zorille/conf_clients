@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xml>
+	<mail sort_en_erreur="non" using="oui">
+		<to>test@test.com</to>
+        <cc>dv@estat.com</cc>
+		<from>nobody@test.com</from>
+	</mail>
+</xml>

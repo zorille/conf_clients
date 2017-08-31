@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xml>
+	<sql using="oui">
+		<liste_bases>
+			<gestion_sam_dev using="oui" sort_en_erreur="oui">
+				<database>gestion_sam_dev</database>
+				<dbhost>192.168.200.100</dbhost>
+				<username>root</username>
+				<crypt_password>0DSDIBAAHGJVKHEVBFDIZAFOE==</crypt_password>
+				<port>3306</port>
+				<encode>utf8</encode>
+			</gestion_sam_dev>
+		</liste_bases>
+	</sql>
+</xml>

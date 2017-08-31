@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xml>
+	<filer>
+		<liste_machines>
+			<typefic1_standard>
+				<type>typefic1_standard</type>
+				<regexpr>/.*/</regexpr>
+				<netname_source>{NOMMACHINE}</netname_source>
+				<type_connexion>ssh</type_connexion>
+				<option_ssh>-o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -r -l 16000</option_ssh>
+				<dossier_source>/datas/logs</dossier_source>
+				<nom_source>{NOMFIC}</nom_source>
+			</typefic1_standard>
+			<typefic2_backup>
+				<type>typefic2_backup</type>
+				<regexpr>/.*/</regexpr>
+				<netname>fqdn1</netname>
+				<type_connexion>ftp</type_connexion>
+				<user>user-prod</user>
+				<dossier_source>/datas/folder-{DATE}/</dossier_source>
+				<nom_source>{NOMFIC}</nom_source>
+			</typefic2_backup>
+		</liste_machines>
+	</filer>
+</xml>

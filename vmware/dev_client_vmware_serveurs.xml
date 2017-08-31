@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xml>
+	<vmware using="oui">
+		<serveur>
+			<serveurPOC1>
+				<connexion>oui</connexion>
+				<host>fqdn</host>
+				<nom>POC_VMWare1</nom>
+				<client>client</client>
+				<port>443</port>
+				<username>root</username>
+				<crypt_password>fghqGQGQDFGUQudfgqQGfqSRqGRug==</crypt_password>
+				<RequestTimeout>12000</RequestTimeout>
+				<url>/sdk/</url>
+				<methode>soap</methode>
+				<useSSL>oui</useSSL>
+				<proxy>
+					<host>192.168.200.100</host>
+					<port>8118</port>
+					<type>0</type>
+				</proxy>
+			</serveurPOC1>
+		</serveur>
+		<wsdl>
+			<vimService>vimService?wsdl</vimService>
+		</wsdl>
+	</vmware>
+</xml>

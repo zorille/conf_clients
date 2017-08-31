@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xml>
+
+	<mail_sujet>Extraction Type client</mail_sujet>
+	<mail sort_en_erreur="non" using="oui">
+		<to>test@test.com</to>
+		<from>moi@moi.com</from>
+	</mail>
+
+	<fonctions_client>./lib/client/fonctions_client_type.php
+	</fonctions_client>
+
+	<!-- Les noms des champs doivent etre uniques -->
+	<use_storage_engine>0</use_storage_engine>
+	<convertir_codeunique_en_nom>1</convertir_codeunique_en_nom>
+	<sql>
+		<requetelist>
+			<requete>SELECT DISTINCT(t1.codeunique) AS codeunique FROM (SELECT codeunique
+				{from} table1 {fin_from} WHERE codeunique IN {codeuniques} AND date IN
+				{dates}) AS t1;</requete>
+			<requete>SELECT DISTINCT(t1.codeunique) AS data1 FROM (SELECT codeunique
+				{from} table1 {fin_from} WHERE codeunique IN {codeuniques} AND date IN
+				{dates}) AS t1;</requete>
+			<requete>SELECT sum(t1.visites) AS data3 FROM (SELECT *
+				{from} table1 {fin_from} WHERE libelle NOT IN
+				('FR','GP','MQ','GY','RE','NC','PF','WF','TF','-','A1','total') AND
+				codeunique IN {codeuniques} AND date IN {dates}) as t1;</requete>
+			<requete>SELECT sum(t1.visites) AS data2 FROM (SELECT * {from}
+				table1 {fin_from} WHERE libelle IN
+				('FR','GP','MQ','GY','RE','NC','PF','WF','TF') AND codeunique IN
+				{codeuniques} AND date IN {dates}) as t1;</requete>
+			<requete>SELECT sum(t1.visites) AS data5 FROM (SELECT *
+				{from} table1 {fin_from} WHERE libelle = "total" AND codeunique IN
+				{codeuniques} AND date IN {dates}) as t1;</requete>
+			<requete>SELECT sum(t1.visites) AS data4 FROM (SELECT
+				* {from} table1 {fin_from} WHERE libelle IN ('-','A1') AND
+				codeunique IN {codeuniques} AND date IN {dates}) as t1;</requete>
+		</requetelist>
+	</sql>
+
+	<algorythme algo_codeuniques="non" algo_dates="oui">
+		<codeunique type="date">
+			<champ>codeunique</champ>
+		</codeunique>
+		<data1 type="date">
+			<champ>data1</champ>
+		</data1>
+		<data3 type="date">
+			<champ>data3</champ>
+			<operateur>+</operateur>
+		</data3>
+		<data2 type="date">
+			<champ>data2</champ>
+			<operateur>+</operateur>
+		</data2>
+		<data4 type="date">
+			<champ>data4</champ>
+			<operateur>+</operateur>
+		</data4>
+		<data5 type="date">
+			<champ>data5</champ>
+			<operateur>+</operateur>
+		</data5>
+	</algorythme>
+
+
+	<fichier affiche_date="oui" ajouter="non" ajouter_codeunique="oui">
+		<nom>nom_fichier</nom>
+		<extension>.csv</extension>
+		<repertoire>{home_dir}/export</repertoire>
+	</fichier>
+	<convert_csv_to_xls>0</convert_csv_to_xls>
+	<supprime_xls_precedent>0</supprime_xls_precedent>
+
+	<ordre_de_sortie ajoute_date="non">
+		<separateur>;</separateur>
+		<champ>
+			<titre>Titre codeunique</titre>
+			<nom_algo>codeunique</nom_algo>
+		</champ>
+		<champ>
+			<titre>Titre data1</titre>
+			<nom_algo>data1</nom_algo>
+		</champ>
+		<champ>
+			<titre>Titre data2</titre>
+			<nom_algo>data2</nom_algo>
+		</champ>
+		<champ>
+			<titre>Titre data3</titre>
+			<nom_algo>data3</nom_algo>
+		</champ>
+		<champ>
+			<titre>Titre data4</titre>
+			<nom_algo>data4</nom_algo>
+		</champ>
+		<champ>
+			<titre>Titre data5</titre>
+			<nom_algo>data5</nom_algo>
+		</champ>
+	</ordre_de_sortie>
+
+</xml>

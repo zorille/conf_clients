@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xml>
+	<utilisateurs using="oui" sort_en_erreur="non">
+		<itop-admin-std>
+			<username>automation</username>
+			<crypt_password>FQSUFUQZGzbebruzeREGzzhGzhgGihri==</crypt_password>
+		</itop-admin-std>
+		<davargas-prod>
+			<username>davargas</username>
+			<crypt_password>DGQSDUGUQHIOZgdihgisHGµGEGIHgih==</crypt_password>
+			<pubkey>/home/davargas/.ssh/id_rsa.pub</pubkey>
+			<privkey>/home/davargas/.ssh/id_rsa</privkey>
+			<type_ssh_key>rsa</type_ssh_key>
+			<passphrase></passphrase>
+		</davargas-prod>
+	</utilisateurs>
+</xml>

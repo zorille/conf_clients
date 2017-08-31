@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xml>
+
+	<log create_log_file="non" fichier_log_unique="oui">
+		<dossier_log>/tmp</dossier_log>
+		<fichier_log>log_synchro.txt</fichier_log>
+	</log>
+
+
+</xml>

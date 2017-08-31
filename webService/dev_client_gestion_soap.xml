@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xml>
+
+	<soap using="oui" sort_en_erreur="oui">
+		<host>host</host>
+		<port>80</port>
+		<url>/webservice/ws</url>
+		<methode>soap/curl</methode>
+		<!-- En cas de methode curl, on peut forcer le protocole de discussion : rest ou soap , both par defaut-->
+		<protocole>rest/soap/both</protocole>
+
+		<username>user</username>
+		<crypt_password>crypt_mdp</crypt_password>
+		<password>mdp_en_clair</password>
+		<RequestTimeout>12000</RequestTimeout>
+		<wsdl>APISiteScopeImpl</wsdl>
+
+		<!-- parametre de l'objet creer_gestion_connexion_url -->
+		<useSSL>oui/non</useSSL>
+		<force_url>non</force_url>
+		<tunnel>
+			<host>hostname.domain</host>
+			<port>10081</port>
+			<timeoutssh>1200</timeoutssh>
+		</tunnel>
+		<proxy>
+			<host>192.168.200.100</host>
+			<port>443</port>
+			<type>0</type><!-- PROXY_HTTP -->
+		</proxy>
+		<!-- parametre de l'objet creer_gestion_connexion_url -->
+	</soap>
+
+</xml>

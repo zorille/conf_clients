@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xml>
+    <moniteur using="oui" sort_en_erreur="oui">
+        <serveur>hobbit.domain</serveur>
+        <update>oui</update>
+    </moniteur>
+</xml>

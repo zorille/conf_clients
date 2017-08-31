@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xml>
+	<internal_err_map>H:/TOOLS/Action/internal_err_map.txt</internal_err_map>
+	<hpom using="oui">
+		<client>
+			<cmd>opcmsg.exe</cmd>
+			<!-- <dossier>C:/Program Files/HP/HP BTO Software/bin/OpC</dossier> -->
+		</client>
+	</hpom>
+</xml>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xml>
+	<hpom using="oui">
+		<serveur>
+			<!-- client -->
+			<serveurclient>
+				<host>192.168.200.100</host>
+				<nom>clientHPOM</nom>
+				<client>client</client>
+				<port>443</port>
+				<username></username>
+				<crypt_password></crypt_password>
+				<RequestTimeout>12000</RequestTimeout>
+				<url>/opr-webservice/metadata/wsdls/</url>
+				<methode>soap</methode>
+				<useSSL>oui</useSSL>
+				<tunnel>
+					<host>192.168.200.101</host>
+					<port>35355</port>
+					<timeoutssh>1200</timeoutssh>
+				</tunnel>
+			</serveurclient>
+			<!-- client -->
+		</serveur>
+		<wsdl>
+			<IncidentService>IncidentService</IncidentService>
+		</wsdl>
+	</hpom>
+</xml>

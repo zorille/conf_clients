@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xml>
+	<hobbit using="oui" sort_en_erreur="oui">
+		<config>/home/hobbit/server/etc/config</config>
+		<history>/home/hobbit/data/hist</history>
+		<nagios>nagios_etat.log</nagios>
+		<mail_conf>group_mail.conf</mail_conf>
+	</hobbit>
+</xml>

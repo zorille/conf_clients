@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xml>
+	<bladelogic using="oui">
+		<serveur>
+			<!-- client -->
+			<serveurclient>
+				<connexion>oui</connexion>
+				<host>192.1698.200.100</host>
+				<nom>client_BSA</nom>
+				<client>client</client>
+				<port>9843</port>
+				<username>BLAdmin</username>
+				<crypt_password>hfdjhddfsgqgihgFGQSGQgfd==</crypt_password>
+				<RequestTimeout>12000</RequestTimeout>
+				<url>/services/</url>
+				<methode>soap</methode>
+				<useSSL>oui</useSSL>
+			</serveurclient>
+			<!-- client -->
+		</serveur>
+		<wsdl>
+			<AssumeRoleService>AssumeRoleService?wsdl</AssumeRoleService>
+			<CLITunnelService>CLITunnelService?wsdl</CLITunnelService>
+			<LoginService>LoginService?wsdl</LoginService>
+			<HandshakeService>HandshakeService?wsdl</HandshakeService>
+			<RESTRequestService>RESTRequestService?wsdl</RESTRequestService>
+			<StandardAttributeInterface>StandardAttributeInterface?wsdl</StandardAttributeInterface>
+			<StandardAttributeInterfaceService>StandardAttributeInterfaceService?wsdl</StandardAttributeInterfaceService>
+		</wsdl>
+	</bladelogic>
+</xml>
