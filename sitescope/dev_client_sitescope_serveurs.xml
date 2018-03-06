@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xml>
+	<sitescope using="oui">
+		<serveur>
+			<!-- client -->
+			<serveurclient1>
+				<host>192.168.200.100</host>
+				<nom>NAME.domain</nom>
+				<client>client</client>
+				<port>8080</port>
+				<username>system</username>
+				<crypt_password>DQSGQugzugbfuGHSDHGIS==</crypt_password>
+				<RequestTimeout>12000</RequestTimeout>
+				<url>/SiteScope/services/</url>
+				<methode>soap</methode>
+				<tunnel>
+					<host>client_proxy</host>
+					<port>18090</port>
+					<timeoutssh>1200</timeoutssh>
+				</tunnel>
+				<proxy>
+					<host>10.129.66.16</host>
+					<port>8080</port>
+				</proxy>
+			</serveurclient1>
+			<serveurclient2>
+				<host>192.168.200.100</host>
+				<nom>NAME2.domain</nom>
+				<client>client</client>
+				<port>8080</port>
+				<username>system</username>
+				<crypt_password>DQSGQugzugbfuGHSDHGIS==</crypt_password>
+				<RequestTimeout>12000</RequestTimeout>
+				<url>/SiteScope/services/</url>
+				<methode>soap</methode>
+				<tunnel>
+					<host>hostname.domain</host>
+					<port>18091</port>
+					<timeoutssh>1200</timeoutssh>
+				</tunnel>
+				<proxy>
+					<host>192.168.200.101</host>
+					<port>8080</port>
+				</proxy>
+			</serveurclient2>
+			<!-- client -->
+		</serveur>
+		<wsdl>
+			<APISiteScope>APISiteScopeImpl</APISiteScope>
+			<APIGroup>APIGroupImpl</APIGroup>
+			<APIMonitor>APIMonitorImpl</APIMonitor>
+			<APIConfiguration>APIConfigurationImpl</APIConfiguration>
+			<APIPreference>APIPreferenceImpl</APIPreference>
+		</wsdl>
+	</sitescope>
+</xml>

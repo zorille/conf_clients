@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xml>
+	<cacti_env>dev</cacti_env>
+	<cacti_machines>
+		<serveur>
+			<!-- Templates -->
+			<serveurTemplates>
+				<host>192.168.200.100</host>
+				<nom>TEST</nom>
+				<hostname>localhost</hostname>
+				<cacti_env>dev</cacti_env>
+				<port>80</port>
+				<ssh-user>cactiuser-prod</ssh-user>
+				
+				<!-- Templates -->
+				<includes>
+					<global>/include/global.php</global>
+					<api_automation_tools>/lib/api_automation_tools.php</api_automation_tools>
+					<api_data_source>/lib/api_data_source.php</api_data_source>
+					<api_device>/lib/api_device.php</api_device>
+					<api_graph>/lib/api_graph.php</api_graph>
+					<api_tree>/lib/api_tree.php</api_tree>
+					<auth>/lib/auth.php</auth>
+					<data_query>/lib/data_query.php</data_query>
+					<graph_export>/lib/graph_export.php</graph_export>
+					<import>/lib/import.php</import>
+					<poller>/lib/poller.php</poller>
+					<rrd>/lib/rrd.php</rrd>
+					<snmp>/lib/snmp.php</snmp>
+					<sort>/lib/sort.php</sort>
+					<template>/lib/template.php</template>
+					<tree>/lib/tree.php</tree>
+					<utility>/lib/utility.php</utility>
+				</includes>
+				<path>/cacti/cacti</path>
+			</serveurTemplates>
+		</serveur>
+	</cacti_machines>
+</xml>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xml>
+    <moniteur using="oui" sort_en_erreur="oui">
+        <status>1500</status>
+		<check>check1</check>
+		<machine>HOST_XYMON</machine>
+    </moniteur>
+</xml>

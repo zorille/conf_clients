@@ -1,0 +1,7 @@
+syntax: glob
+.settings/org.eclipse.wst.common.project.facet.core.xml
+.buildpath
+.hgignore
+.project
+.settings/org.eclipse.php.core.prefs
+.directory

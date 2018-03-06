@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xml>
+	<librenms_machines using="oui">
+		<serveur>
+			<!-- librenmsk -->
+			<serveurlibrenms>
+				<host>librenms.domain</host>
+				<nom>librenms-test</nom>
+				<client>client</client>
+				<port>8089</port>
+				<RequestTimeout>12000</RequestTimeout>
+				<useSSL>oui</useSSL>
+				<url>/api/v0</url>
+				<methode>curl</methode>
+			</serveurlibrenms>
+		</serveur>
+	</librenms_machines>
+</xml>

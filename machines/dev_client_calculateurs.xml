@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xml>
+	<liste_calculateurs>
+		<calculateur>
+			<calculateura>
+				<netname>fqdn1</netname>
+				<Username>user1</Username>
+				<Password>mdp1</Password>
+				<DiskSpace>40000</DiskSpace>
+				<RamSpace>50000</RamSpace>
+				<MaxRamJob>40000</MaxRamJob>
+				<CPUUnit>12</CPUUnit>
+				<MaxNbJob>10</MaxNbJob>
+			</calculateura>
+			<calculateur1>
+				<netname>fqdn2</netname>
+				<Username>user1</Username>
+				<Password>mdp1</Password>
+				<DiskSpace>40000</DiskSpace>
+				<RamSpace>50000</RamSpace>
+				<MaxRamJob>40000</MaxRamJob>
+				<CPUUnit>8</CPUUnit>
+				<MaxNbJob>5</MaxNbJob>
+			</calculateur1>
+			<calculateur2>
+				<netname>fqdn3</netname>
+				<Username>user1</Username>
+				<Password>mdp1</Password>
+				<DiskSpace>40000</DiskSpace>
+				<RamSpace>50000</RamSpace>
+				<MaxRamJob>40000</MaxRamJob>
+				<CPUUnit>8</CPUUnit>
+				<MaxNbJob>5</MaxNbJob>
+			</calculateur2>
+			<calculateur3>
+				<netname>fqdn4</netname>
+				<Username>user1</Username>
+				<Password>mdp1</Password>
+				<DiskSpace>40000</DiskSpace>
+				<RamSpace>50000</RamSpace>
+				<MaxRamJob>40000</MaxRamJob>
+				<CPUUnit>8</CPUUnit>
+				<MaxNbJob>5</MaxNbJob>
+			</calculateur3>
+		</calculateur>
+	</liste_calculateurs>
+</xml>

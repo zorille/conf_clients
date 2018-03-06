@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xml>
+	<itop_machines using="oui">
+		<serveur>
+			<serveuriTop>
+				<host>itopws.domain</host>
+				<nom>itop</nom>
+				<client>client</client>
+				<port>443</port>
+				<utilisateur>itop-admin-std</utilisateur>
+				<RequestTimeout>12000</RequestTimeout>
+				<useSSL>oui</useSSL>
+				<url>/rest.php</url>
+				<methode>curl</methode>
+				<protocole>rest</protocole>
+				<proxy>
+					<host>192.168.200.100</host>
+					<port>8118</port>
+					<type>0</type>
+				</proxy>
+			</serveuriTop>
+			<serveuriTopAdmin>
+				<host>itop.domain</host>
+				<nom>itop_admin</nom>
+				<client>client</client>
+				<port>443</port>
+				<utilisateur>itop-admin-std</utilisateur>
+				<RequestTimeout>12000</RequestTimeout>
+				<useSSL>oui</useSSL>
+				<url>/webservices/rest.php</url>
+				<methode>curl</methode>
+				<protocole>rest</protocole>
+			</serveuriTopAdmin>
+			<serveurPOC2>
+				<host>itop.domain</host>
+				<nom>itop_test</nom>
+				<client>client</client>
+				<port>80</port>
+				<utilisateur>admin-std</utilisateur>
+				<RequestTimeout>12000</RequestTimeout>
+				<useSSL>non</useSSL>
+				<url>/itop/webservices/</url>
+				<methode>soap</methode>
+				<connexion>oui</connexion>
+				<protocole>soap</protocole>
+			</serveurPOC2>
+		</serveur>
+		<wsdl>
+			<itopService>itop.wsdl.php</itopService>
+		</wsdl>
+	</itop_machines>
+</xml>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xml>
+    <moniteur using="oui" sort_en_erreur="oui">
+        <serveur>192.168.200.100</serveur>
+        <port>1984</port>
+        <update>oui</update>
+        <type_os>win</type_os>
+        <bb_client>C:\Program Files\BBWin\bin\BBWinCmd.exe</bb_client>
+    </moniteur>
+</xml>

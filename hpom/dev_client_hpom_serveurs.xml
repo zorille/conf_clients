@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xml>
+	<stars using="oui">
+		<serveur>
+			<!-- client -->
+			<serveurclient>
+				<connexion>oui</connexion>
+				<host>192.168.200.100</host>
+				<nom>client_ITSM</nom>
+				<client>client</client>
+				<port>35355</port>
+				<username>USERNAME</username>
+				<crypt_password>GQSIGHQSIGHQKSDGHQKG==</crypt_password>
+				<RequestTimeout>12000</RequestTimeout>
+				<url>/SM/7/</url>
+				<methode>soap</methode>
+
+				<!-- donnees de creation de ticket -->
+				<area>HPOM</area>
+				<category>incident</category>
+				<OpenBy>USER</OpenBy>
+				<om_serveur>serveur</om_serveur>
+			</serveurclient>
+			<!-- client -->
+		</serveur>
+		<wsdl>
+			<IncidentManagement>IncidentManagement</IncidentManagement>
+		</wsdl>
+	</stars>
+</xml>

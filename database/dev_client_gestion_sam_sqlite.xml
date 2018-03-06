@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xml>
+	<sql using="oui">
+		<liste_bases>
+			<gestion_sam_sqlite using="oui" sort_en_erreur="oui">
+				<dbhost>gestion_sam</dbhost>
+				<type>sqlite</type>
+				<encode>utf8</encode>
+			</gestion_sam_sqlite>
+		</liste_bases>
+	</sql>
+</xml>

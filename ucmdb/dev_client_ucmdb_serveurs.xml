@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xml>
+	<ucmdb using="oui">
+		<serveur>
+			<!-- client -->
+			<serveurclient>
+				<connexion>oui</connexion>
+				<host>192.168.200.100</host>
+				<nom>client_UCMDB</nom>
+				<client>client</client>
+				<port>9843</port>
+				<username></username>
+				<crypt_password></crypt_password>
+				<RequestTimeout>12000</RequestTimeout>
+				<url>/services/</url>
+				<methode>soap</methode>
+				<useSSL>oui</useSSL>
+			</serveurclient>
+			<!-- client -->
+		</serveur>
+		<wsdl>
+			<AssumeRoleService>AssumeRoleService?wsdl</AssumeRoleService>
+			<CLITunnelService>CLITunnelService?wsdl</CLITunnelService>
+			<LoginService>LoginService?wsdl</LoginService>
+			<HandshakeService>HandshakeService?wsdl</HandshakeService>
+			<RESTRequestService>RESTRequestService?wsdl</RESTRequestService>
+			<StandardAttributeInterface>StandardAttributeInterface?wsdl</StandardAttributeInterface>
+			<StandardAttributeInterfaceService>StandardAttributeInterfaceService?wsdl</StandardAttributeInterfaceService>
+		</wsdl>
+	</ucmdb>
+</xml>

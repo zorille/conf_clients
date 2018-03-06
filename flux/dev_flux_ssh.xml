@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xml>
+	<ssh_machines using="oui">
+		<serveur>
+			<serveurDV1>
+				<nom>localhost</nom>
+				<host>127.0.0.1</host>
+				<port>22</port>
+				<utilisateur>davargas-prod</utilisateur>
+			</serveurDV1>
+			<serveurDV2UsernamePasswd>
+				<nom>localhost2</nom>
+				<host>127.0.0.1</host>
+				<port>22</port>
+				<username>davargas</username>
+				<crypt_password>DFHSDFHQSDJHFSQJKFHSDK==</crypt_password>
+			</serveurDV2UsernamePasswd>
+		</serveur>
+	</ssh_machines>
+</xml>

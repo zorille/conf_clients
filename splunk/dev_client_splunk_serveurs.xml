@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xml>
+	<splunk_machines using="oui">
+		<serveur>
+			<!-- splunk -->
+			<serveursplunk>
+				<host>splunk.domain</host>
+				<nom>splunk</nom>
+				<client>client</client>
+				<port>8089</port>
+				<username>admin</username>
+				<crypt_password>DJFHSUUQzfyegzeufhueihfefehUfe==</crypt_password>
+				<RequestTimeout>12000</RequestTimeout>
+				<useSSL>oui</useSSL>
+				<url>/</url>
+				<methode>curl</methode>
+			</serveursplunk>
+		</serveur>
+	</splunk_machines>
+</xml>

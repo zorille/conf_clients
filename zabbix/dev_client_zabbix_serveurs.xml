@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xml>
+	<zabbix_machines using="oui">
+		<serveur>
+			<!-- Localhost -->
+			<serveurLocalhost>
+				<host>zabbix.domain</host>
+				<nom>zabbix_test</nom>
+				<client>client</client>
+				<port>80</port>
+				<utilisateur>zabbix-admin-dev</utilisateur>
+				<RequestTimeout>12000</RequestTimeout>
+				<useSSL>non</useSSL>
+				<url>/zabbix/api_jsonrpc.php</url>
+				<methode>curl</methode>
+			</serveurLocalhost>
+		</serveur>
+	</zabbix_machines>
+</xml>
